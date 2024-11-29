@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div id="preloader">
+    </div>
+    <section class="header">
+       <nav>
+         <a href="ïndex.html"><img src="images/logo.png"></a>
+         <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="login.php">LOGIN</a></li>
+                <li><a href="signup.php">REGISTER</a></li>
+                <li><a href="contact.php">CONTACT</a></li>
+             </ul>
+         </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+     </nav>
+
+        <div class="text-box">
+              <h1>Organic & Greener than Ever!</h1>
+              <p>All about ecological farming from The Department of Agriculture.<br> Join hands with us today to help our country be a healthy nation for tomorrow!</p>
+              <a href="signup.php" class="join-button">Join Today for Tomorrow!</a>  
+        </div>
+
+    </section>
+
+
+<section class="faqs">
+    <h1>Frequently Asked Questions on Ecological Farming</h1>
+    <p>Learn more about organic food production to embark on this exciting journey with us! Scroll through to know what farmers frequently ask. The Department of Agriculture is here for All you need! </p>
+       <div class="row">
+           <div class="column">
+              <h3>What is Ecological Farming?</h3>
+              <p>In simple terms, ecological farming is like working in harmony with nature to grow food in a way that's good for the environment, the plants, and the people who eat the food. It's about using natural methods instead of chemicals, and being mindful of the whole ecosystem on the farm.</p>
+            </div>
+
+            <div class="column">
+              <h3>How does Ecological Framing help the environment?</h3>
+              <p>Ecological farming benefits the environment by avoiding harmful chemicals, preventing pollution, maintaining soil health, and promoting biodiversity. It also reduces carbon emissions through local and seasonal production. This approach supports a balanced and resilient ecosystem while providing nutritious food sustainably.</p>
+            </div>
+
+            <div class="column">
+              <h3>Why does organic cost more?</h3>
+              <p>The cost of organic food is higher than that of conventional food because the organic price tag more closely reflects the true cost of growing the food: substituting labor and intensive management for chemicals. These costs may include cleanup of polluted water and remediation of pesticide contamination.</p>
+            </div>
+        </div>  
+
+<a href="blog.html" class="blog-button">Discover More on our Blog Page!</a> 
+
+</section>
+
+  
+<section class="services">
+    <h1>Our Services</h1>
+    <p>The Department of Agriculture offers a range of services to promote ecological farming and support farmers in adopting sustainable practices. Register today to benefit from our services.</p>
+
+    <div class="row">
+        <div class="services-column">
+         <img src="images/training.jpg">
+         <div class="layer">
+            <h3>Technical Assistance and Training.</h3>
+         </div>
+        </div>
+
+        <div class="services-column">
+            <img src="images/financial.jpg">
+            <div class="layer">
+                <h3>Financial Support.</h3>
+             </div>
+        </div>
+
+        <div class="services-column">
+         <img src="images/certificate.jpg">
+         <div class="layer">
+            <h3>Certifications.</h3>
+         </div>
+        </div>
+        <div class="services-column">
+            <img src="images/market.jpg">
+            <div class="layer">
+                <h3>Market Access and Promotion.</h3>
+             </div>
+        </div>
+    </div>
+
+    <a href="signup.php" class="services-button">Register for the services!</a> 
+</section>
+
+<section class="testimonials">
+    
+        <h1>What farmers who have joined hands with us have to say!</h1>
+        <p>Here are some testimonials from our farmers who have gained our services.</p>
+
+        <div class="row">
+            <div class="testimonial-column">
+             <p>I have immensely benefitted from the services provided by the department of agriculture. They are worth your time. I also have learnt the importance of Eco-Farming and its positive impacts on our environment.
+             I believe every farmer should be practicing Ecological Farming and sooner we would see a pollution free future healthy Sri Lanka.</p>
+             <h3>Mr. Sirisena.</h3>
+            </div>
+
+            <div class="testimonial-column">
+             <p>I have immensely benefitted from the services provided by the department of agriculture. They are worth your time. I also have learnt the importance of Eco-Farming and its positive impacts on our environment.
+            I believe every farmer should be practicing Ecological Farming and sooner we would see a pollution free future healthy Sri Lanka.</p>
+             <h3>Mr. Gunarathna.</h3>
+            </div>
+
+             <div class="testimonial-column">
+             <p>I have immensely benefitted from the services provided by the department of agriculture. They are worth your time. I also have learnt the importance of Eco-Farming and its positive impacts on our environment.
+             I believe every farmer should be practicing Ecological Farming and sooner we would see a pollution free future healthy Sri Lanka.</p>
+            <h3>Mr. Perera.</h3>
+             </div>
+
+
+        </div>
+
+    
+    <a href="contact.php" class="contact-button">Contact Us for more Information.</a> 
+</section>
+
+<section class="footer">
+    <h4>DEPARTMENT OF AGRICULTURE</h4>
+    <p>Department of Agriculture, P.O.Box. 01, Peradeniya </p>
+    <p>Contact us:+94 812 388331/32/34</p>
+    <p>Email:info@doa.gov.lk</p>
+    <p>Open Hours:Mon to Fri - 8.30am to 4.15pm (Closed on weekends and public holidays)</p>
+    <p class="copyright">Copyright © 2023 Department of Agriculture Sri lanka. All rights reserved.</p>
+</section>
+
+
+<!----------javascript for toggle menu---------->
+    <script>
+       var navLinks=document.getElementById("navLinks");
+       function showMenu(){
+        navLinks.style.right="0";
+       }
+
+       function hideMenu(){
+        navLinks.style.right="-200px";
+       }
+       var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+      loader.style.display = "none";
+    })
+    </script>
+    
+</body>
+</html>
